@@ -1,0 +1,215 @@
+/* Glodal */
+body {
+    font-family: 'Roboto Mono', monospace;
+    color: #121617;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #626363;
+}
+
+header {
+    padding: 2rem 1rem;
+    
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    padding: 2rem 1rem;
+    background-color: #121617;
+    color: #f9f9fa;
+}
+
+/* Main */
+
+.nav {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    width: 80%;
+    
+}
+
+.nav ul a {
+    text-decoration: none;
+}
+
+#pink a {
+    color: #FF61B5;
+}
+#green a {
+    color: #41DB3D;
+}
+
+#yellow a {
+    color: yellow;
+}
+
+#blue a {
+    color: aqua;
+}
+
+.nav li {
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.nav-link {
+    font-weight: 100;
+    color: #FF61B5;
+    text-shadow: 0 0 5px #FF61B5, 0 0 10px #FF61B5,  0 0 5px #41DB3D,;
+}
+
+#logo a {
+    display: 
+    font-weight: 100;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 5px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+
+
+/* MISSION STATEMENT */
+
+#mission-statement {
+    display: flex;
+    color: #FF61B5;
+    align-content: center;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* Media Queries for tablets*/
+
+@media screen and (max-width: 768px) {
+    
+}
+
+/* Media Queries for phones */
+
+@media  and (max-width: 480px) {
+    .nav ul {
+        flex-direction: column;
+    }
+
+    #portfolio {
+        flex-flow: column;
+        
+    }
+    
+}
+
+/* PORTFOLIO */
+
+.cards-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    padding: 2rem 1rem;
+    border-radius: 2px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: tramsform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+}
+
+/* CTA SECTION */
+
+.cta-section {
+    
+    padding: 3rem 1rem;
+}
+
+.cta-card .text{
+    opacity: 0;
+}
+
+.one {
+    background-image: url(./resources/christian-mackie-euBmypOZUZA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.one:hover, .two:hover, .three:hover, .four:hover {
+    background-color: #f9f9fa;
+    background-image: none;
+    border-radius: 1rem;
+}
+
+.cta-card .text:hover {
+    opacity: 1;
+    color: #354144;
+    z-index: 5;
+}
+
+.two {
+    background-image: url(./resources/sidekix-media-_IAZoJ6X-1A-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.three {
+    background-image: url(./resources/kam-idris-hYb7kbu4x7E-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.four {
+    background-image: url(./resources/r-architecture-CCjAPxoQWgQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* TEAM SECTION */
+
+.team-section {
+    padding: 3rem 1rem;
+}
+
+.team-card {
+    background-color: #354144;
+    color: #f9f9fa;
+}
+
+.team-card img {
+    max-width: 175px;
+    border-radius: 50%;
+    border: 2px solid #121617;
+    margin-bottom: 1rem;
+    margin-top: -3rem;
+}
